@@ -18,7 +18,7 @@ const changeRoute = (newRoute: string) => {
 <template>
   <div class="app-container">
     <nav>
-      <button @click="changeRoute('Home')">Homse</button>
+      <button @click="changeRoute('Home')">Home</button>
       <button @click="changeRoute('Rulebook')">Rulebook</button>
       <button @click="changeRoute('Species')">Species</button>
       <button @click="changeRoute('Perks')">Perks</button>
