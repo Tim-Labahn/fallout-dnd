@@ -1,8 +1,10 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/fallout-dnd/', // Adjust this to the repository name
-});
+  server: {
+    port: 8000,
+    open: true, // Öffnet automatisch den Browser
+  },
+})
