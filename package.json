@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "vite build && xcopy /E /I /Y dist docs",
+    "predeploy": "rmdir /s /q docs && mkdir docs && xcopy /E /I /Y dist docs",
+    "deploy": "gh-pages -d docs",
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
   },
-  
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
     "typescript": "^5.5.4",
