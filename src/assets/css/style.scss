@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  background-color: rgb(78, 128, 179);
+  /* Blue shade for background */
+}
+
+/* Full-page Background */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+  /* Space for navbar */
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgb(245, 233, 113);
+  /* Yellow shade for navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+  z-index: 1000;
+  border-bottom: 2px solid black;
+  /* Black border at the bottom of the navbar */
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: rgb(78, 128, 179);
+  /* Blue shade for buttons */
+  color: black;
+  /* Black text */
+  border: 2px solid black;
+  /* Black border */
+  border-radius: 5px;
+  /* Slightly rounded buttons */
+  font-size: 16px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(245, 233, 113);
+  /* Yellow on hover */
+}
+
+/* Content Styling */
+.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Soft shadow for content */
+  background-color: white;
+  /* White background for content */
+  border: 1px solid black;
+  /* Black border around content */
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  margin-top: 20px;
+}
+
+/* Home Page Specific Styles */
+.home header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home .subtitle {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.home .description {
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+.home .features {
+  margin: 20px 0;
+}
+
+.home .features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home .features li {
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.home .cta {
+  margin-top: 30px;
+}
