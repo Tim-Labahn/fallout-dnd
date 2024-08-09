@@ -2,8 +2,9 @@
 import { ref } from 'vue';
 import Home from "./components/Home.vue";
 import Rulebook from "./components/Rulebook.vue";
-import Perks from "./components/Perks.vue";
 import Species from "./components/Species.vue";
+import Perks from "./components/Perks.vue";
+import Calculator from "./components/Calculator.vue";
 
 // Initializing route
 const route = ref("Home");
@@ -17,19 +18,29 @@ const changeRoute = (newRoute: string) => {
 <template>
   <div class="app-container">
     <nav>
-      <button @click="changeRoute('Home')">Home</button>
+      <button @click="changeRoute('Home')">Homse</button>
       <button @click="changeRoute('Rulebook')">Rulebook</button>
-      <button @click="changeRoute('Perks')">Perks</button>
       <button @click="changeRoute('Species')">Species</button>
+      <button @click="changeRoute('Perks')">Perks</button>
+      <button @click="changeRoute('Calculator')">Calculator</button>
     </nav>
 
     <div class="content">
-      <Home v-if="route === 'Home'" @changeRoute="changeRoute" />
-      <Rulebook v-if="route === 'Rulebook'" />
-      <Perks v-if="route === 'Perks'" />
-      <Species v-if="route === 'Species'" />
+      <div v-if="route === 'Home'">
+        <Home />
+      </div>
+      <div v-if="route === 'Rulebook'">
+        <Rulebook />
+      </div>
+      <div v-if="route === 'Species'">
+        <Species />
+      </div>
+      <div v-if="route === 'Perks'">
+        <Perks />
+      </div>
+      <div v-if="route === 'Calculator'">
+        <Calculator />
+      </div>
     </div>
   </div>
 </template>
-
-<style src="./style.css"></style>
