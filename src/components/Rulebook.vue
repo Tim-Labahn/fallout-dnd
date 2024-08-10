@@ -17,7 +17,8 @@
                 <li><strong>Agility (AG)</strong></li>
             </ul>
             <p><strong>Zu Beginn des Spiels hat jeder Spieler 250 Punkte, die er auf die sechs Attribute verteilen
-                    kann.</strong> Kein Attribut darf dabei höher als 100 oder niedriger als 10 sein.</p>
+                    kann.</strong> Attribut dürfen je nach Rasse zwischen bestimten werten sein, standard (Human) ist
+                das werte zwischen 10 und 100 sein können, aber andere rassen können ein anderes level cap haben.</p>
 
             <h3>Fertigkeiten (Skills)</h3>
             <p><strong>Es gibt verschiedene Fertigkeiten, die durch die Attribute beeinflusst werden. Jeder Charakter
@@ -144,33 +145,8 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Rassen</h2>
-            <h3>Mensch</h3>
-            <ul>
-                <li><strong>Max Stats:</strong> Alle Werte zwischen 10 und 100.</li>
-                <li><strong>Perks:</strong> Kann alle Perks haben.</li>
-                <li><strong>Besondere Eigenschaften:</strong> Keine besonderen Eigenschaften oder Schwächen, aber große
-                    Vielseitigkeit.</li>
-            </ul>
 
-            <h3>Ghoul</h3>
-            <ul>
-                <li><strong>Max Stats:</strong> Stärke 150, Charisma 50, Andere Werte 100</li>
-                <li><strong>Heilung:</strong> Heilt automatisch nach einem Kampf bei einem erfolgreichen Wurf auf
-                    Konstitution.</li>
-                <li><strong>Rage:</strong> Verfällt in Rage, wenn die Lebenspunkte unter 20% fallen.</li>
-                <li><strong>Kannibalismus:</strong> Kann menschliche Leichen essen, um LP wiederherzustellen.</li>
-            </ul>
 
-            <h3>Supermutant</h3>
-            <ul>
-                <li><strong>Max Stats:</strong> Stärke 200, Intelligenz 60, Andere Werte 100</li>
-                <li><strong>Besondere Eigenschaften:</strong> Hohe Resistenz gegen Strahlung und chemische Angriffe.
-                </li>
-                <li><strong>Schwächen:</strong> Erhöhte Verwundbarkeit gegenüber hochenergetischen Waffen.</li>
-            </ul>
-        </section>
 
         <section>
             <h2>Perks</h2>
