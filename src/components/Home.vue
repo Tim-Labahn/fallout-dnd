@@ -63,24 +63,7 @@ const features = [
                 bringt seine eigenen Schwierigkeiten mit sich.
             </p>
         </section>
-        <section class="features">
-            <h2>Key Features</h2>
-            <ul>
-                <li v-for="feature in features" :key="feature">{{ feature }}</li>
-            </ul>
-        </section>
-        <section class="cta">
-            <h2>Get Started</h2>
-            <p>
-                Ready to embark on your journey? Check out the sections below to explore
-                more.
-            </p>
-            <button @click="emit('changeRoute', 'Rulebook')">
-                Explore the Rulebook
-            </button>
-            <button @click="emit('changeRoute', 'Perks')">View Perks</button>
-            <button @click="emit('changeRoute', 'Species')">Explore Species</button>
-        </section>
+
     </div>
 </template>
 

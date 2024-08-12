@@ -10,6 +10,7 @@ const perks = [
 
 <template>
     <div class="perks">
+        <p>You got me, this is still in work xD</p>
         <h1>Perks</h1>
         <ul>
             <li v-for="perk in perks" :key="perk">{{ perk }}</li>
