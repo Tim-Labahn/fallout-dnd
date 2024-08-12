@@ -1,21 +1,17 @@
 <template>
-    <div class="container">
-        <div class="sheet-head">
-            test
 
-        </div>
+    <div class="pdf-container">
+
+        <embed src="src\assets\character-sheet.pdf" type="application/pdf" width="100%" height="100%" />
+
     </div>
 </template>
 
 <style>
-.container {
-    width: 100%;
-    height: 100%;
-}
-
-.sheet-head {
-    width: auto;
-    height: 100%;
-    background-color: lightblue;
+.pdf-container {
+    margin-top: 20px;
+    width: 1200px;
+    height: 1200px;
+    /* Die Höhe der PDF-Anzeige kann nach Bedarf angepasst werden */
 }
 </style>
