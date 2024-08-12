@@ -1,23 +1,182 @@
 <script setup lang="ts">
-const perks = [
-    'Strong Back: Carry more weight.',
-    'Sneak: Move quietly and remain undetected.',
-    'Scrounger: Find more ammunition.',
-    'Quick Hands: Reload faster.',
-    'Comprehension: Gain more skill points from books.'
+interface Perk {
+    name: string;
+    ranks: number;
+    requirements: string;
+    description: string;
+}
+
+const perks: Perk[] = [
+    {
+        name: "Action Boy/Girl",
+        ranks: 1,
+        requirements: "Keine",
+        description:
+            "Wenn du AP nutzt um eine zusätliche aktion auszuführen, Sind deine Skill test nicht erschwert.",
+    },
+    {
+        name: "Adamantium Skeleton",
+        ranks: 3,
+        requirements: "END 70, Level 1+",
+        description:
+            "Wenn du schaden erleidest, steigt die numer and kriithscen würfen die es braucht um dich kritisch zu treffen. Für jedes Level Braucht es einen kritischen wurf Mehr, zum beispiel Bei Rank 3 Braucht es 4 Würfe mit 5 oder 6 um dich kritisch zu treffen.",
+    },
+    {
+        name: "Adrenalin Rush",
+        ranks: 1,
+        requirements: "STR 70",
+        description:
+            "Wenn deine HP under deine Maximalen HP sinken, steigt dein STR score für alle STR tests auf 100 ",
+    },
+    {
+        name: "Animal Friend",
+        ranks: 2,
+        requirements: "CHA 60, Level 1+",
+        description:
+            "Auf level 1, wann immer eine creature dich angreift die vom type Insect, Eidechse oder Säugetier ist, Würfle Einen W6: wenn der wurf 4 oder weniger ist, greift die Kreatur dich nicht an. Kann aber andere angreifen. Auf level 2, kannst du einen wurf auf CHA + Survial nachen mit einer schwierigkeit von 2. Bei einem Erfolg sieht dich die creatur als Friedlich an, und wird JEDEN angreifen der dich angreift. Jedes mal wenn du diesen Perk einsetzt, erhöht sich die Vorraussetzung Level um 5.",
+    },
+    {
+        name: "Aquaboy/Aquagirl",
+        ranks: 2,
+        requirements: "END 50, Level 1+",
+        description:
+            "Wasser ist dein freund. Bei Rank 1, erleidest du keinen radiation damge mehr durch das schwimmen durch Wasser, und du kanst dine luft doppelt so lange halten wie normal. Bei Rank 2, haben gegner schwierigkeiten dich zu sehen wenn du unter wasser bist. Rank 2 Level Requirment ist 4+",
+    },
+    {
+        name: "Armorer",
+        ranks: 4,
+        requirements: "STR 50, INT 60",
+        description:
+            "Du kanst rüstung mit verbeserungs mods verbessern. Jeder rank dieses Perks scheltet ein level an Mods Frei. Bei Rank 1 kanst du Mod level 1, etc.",
+    },
+    {
+        name: "Awareness",
+        ranks: 1,
+        requirements: "PER 70",
+        description:
+            "Wenn du die kleine Aktion Zielen, verwendest erhält beim nächsten angriff, dein höchster wurf Piercing. ",
+    },
+    {
+        name: "Barbarian",
+        ranks: 1,
+        requirements: "STR 70, Level 4+, Human",
+        description:
+            "Deine Physische DR Steigt anhand Deines STR Wertes. STR 80-90 = +10 Physical DR, STR 90-100 = +15 Physical DR, STR 100+ = +20 Physical DR",
+    },
+    {
+        name: "Basher",
+        ranks: 1,
+        requirements: "STR 60",
+        description:
+            "Wenn du einen nahkampf angriff mit deiner waffe machst erhält dein angriff zusätlich den Vicious Effekt",
+    },
+    {
+        name: "Bessere Krits",
+        ranks: 1,
+        requirements: "LCK 90",
+        description:
+            "Jedesmal wenn du einen angriff ausführst kannst du einen Glückspunkt verbrauchen und im gegenzug ist dein angriff kritisch.",
+    },
+    {
+        name: "Revolverheld",
+        ranks: 3,
+        requirements: "Keine",
+        description:
+            "Erhöht die Trefferchance mit einem Revolver, verringert jedoch die Trefferchance mit anderen Waffen.",
+    },
+    {
+        name: "Powerrüstung-Profi",
+        ranks: 3,
+        requirements: "Keine",
+        description:
+            "Erhöht die Schadensresistenz beim Tragen von Powerrüstung, verringert jedoch die Beweglichkeit ohne Powerrüstung.",
+    },
+    {
+        name: "Scharfschützen-Elite",
+        ranks: 3,
+        requirements: "Keine",
+        description:
+            "Erhöht die Trefferchance bei Kopfschüssen, verringert jedoch die Trefferchance bei nicht gezielten Schüssen.",
+    },
+    {
+        name: "Meistermediziner",
+        ranks: 3,
+        requirements: "Keine",
+        description:
+            "Heilgegenstände stellen mehr Gesundheit wieder her, verringert jedoch die Heilwirkung von Nahrung und Getränken.",
+    },
+    // Add other perks similarly
 ];
 </script>
 
 <template>
     <div class="perks">
-        <p>You got me, this is still in work xD</p>
         <h1>Perks</h1>
-        <ul>
-            <li v-for="perk in perks" :key="perk">{{ perk }}</li>
+        <ul class="perks-list">
+            <li v-for="perk in perks" :key="perk.name" class="perk-item">
+                <h2>{{ perk.name }}</h2>
+                <p><strong>Ranks:</strong> {{ perk.ranks }}</p>
+                <template v-if="perk.requirements">
+                    <p><strong>Requirements:</strong> {{ perk.requirements }}</p>
+                </template>
+                <p><strong>Description:</strong> {{ perk.description }}</p>
+            </li>
         </ul>
     </div>
 </template>
 
 <style scoped>
 /* Scoped styles for Perks.vue */
+.perks {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    /* Light background for perks section */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for better depth */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    /* Darker text for better readability */
+}
+
+.perks-list {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+}
+
+.perk-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    /* Light border around each perk */
+    border-radius: 8px;
+    background-color: #fff;
+    /* White background for each perk item */
+}
+
+.perk-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+    /* Slightly darker text for names */
+}
+
+.perk-item p {
+    margin: 0.5rem 0;
+    color: #555;
+    /* Slightly darker text for descriptions */
+}
+
+.perk-item strong {
+    font-weight: bold;
+}
 </style>
