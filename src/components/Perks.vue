@@ -172,8 +172,81 @@ const perks: Perk[] = [
         name: "Daring Nature",
         ranks: 1,
         requirements: "LCK 70",
-        description: "",
+        description: "Solltest du AP ausgeben um einen W20 für deinen angriff zu kaufen. Kannst du diesen Ap An den GM geben. dafür Kannst du diesen W20 neu würfeln.",
     },
+    {
+        name: "Daring Nature",
+        ranks: 1,
+        requirements: "LCK 70",
+        description: "Solltest du AP ausgeben um einen W20 für deinen angriff zu kaufen. Kannst du diesen Ap An den GM geben. dafür Kannst du diesen W20 neu würfeln.",
+    },
+    {
+        name: "Demolition Expert",
+        ranks: 1,
+        requirements: "PER 60, LCK 60",
+        description: "Wenn du einen angriff mit einer waffe vom typ Explosion machst, Erhält der angriff den VICIOUS Damage effekt. Ebenfals schaltest du Sprengstoff rezepte frei.",
+    },
+    {
+        name: "Dodger",
+        ranks: 1,
+        requirements: "AGI 60, Level 4",
+        description: "Wenn du die Hauptaktion Ausweichen verwendest, kanst du einen W20 zu deinen gunsten nutzen",
+    },
+    {
+        name: "Dogmeat",
+        ranks: 1,
+        requirements: "CHA 50",
+        description: "Du bist in dieser von tod überkommenen welt nicht allein, du hast einen Hund. Dein Hund kümmert sich um sich selbst was essen und trinken angeht. Sollte dein hund sterben, findest du mit sicherheit schnell einen neuen streuner. Oder wenn dein hund dich zu sehr nervt kanst du nach seinem Tod auch diesen perk umtauschen.",
+    },
+    {
+        name: "Entomologist",
+        ranks: 1,
+        requirements: "INT 70",
+        description: "Bei einem angrif gegen ein NPC vom typ Insekt, erhällt dein angriff Piercing +1.",
+    },
+    {
+        name: "Fast Metabolism",
+        ranks: 3,
+        requirements: "END 60, Level 1+, Not a Robot",
+        description: "Wenn du 10 oder mehr HP auf andere wege als Rasten regenerierst, heilst du Pro rank in diesem Perk 5 zusätliche HP.",
+    },
+    {
+        name: "Faster Healing",
+        ranks: 1,
+        requirements: "END 60, Not a Robot",
+        description: "Wenn du ein END + Survival test machst um deine verletzungen zu heilen, kanst du einen W20 zu deinen gunsten nutzen.",
+    },
+    {
+        name: "Finesse",
+        ranks: 1,
+        requirements: "AGI 90",
+        description: "Einmal pro Kampf, Kannst du Alle genutzen W6 neu werfen ohne Glückspunkte zu verbrauchen.",
+    },
+    {
+        name: "Fortune Finder",
+        ranks: 3,
+        requirements: "LCK 50, Level 2+",
+        description: "Wenn du einen wurf machst um zu schauen wie viel geld du findest, findest du je nach rank mehr. Rank 1: du finfest 2W4 mehr geld, Rank 2: du finfest 5W4 mehr geld, Rank 1: du finfest 8W4 mehr geld,",
+    },
+    {
+        name: "Ghost",
+        ranks: 1,
+        requirements: "PER 50, AGI 60",
+        description: "Wenn du einen wurf auf AGI + Sneak machst, kannst du einen W20 zu deinen gunsten nutzen.",
+    },
+    {
+        name: "Grim Reaper",
+        ranks: 1,
+        requirements: "LCK 80",
+        description: "Wenn du mit einem angriff einen oder mehrere gegner Tötest, und du mit einem W6 eine 5 oder höher wirfst, füge zwei AP zum gruppen AP pool.",
+    },
+    {
+        name: "Gun Fu",
+        ranks: 3,
+        requirements: "AGI 100, Level 1+",
+        description: "Rank 1: Wenn du einen gegner aus der ferne triffst kannst du 1 AP verbrauchen um einen weiteren gegner an einer zufälligen stelle zu treffen. Dieser erleided den selben schaden wie der erste. Rank 2: Auf Rank 2 Kanst du bis zu 2 AP einsetzen um stat dessen zwei weitere gegner zu treffen. Rank 3: Du kannst bis zu 3 AP verwenden um 3 Gegner zu treffen. Mit jedem perk level steigt das benötigte level um 5.",
+    },
+
 ];
 </script>
 
