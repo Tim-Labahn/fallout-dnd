@@ -1,5 +1,6 @@
 <template>
     <h1>Welcome to The Wasteland</h1>
+    <p>Noch nicht ganz fertig, Etwas geduld.</p>
 
     <iframe src="https://1drv.ms/w/c/0ecc6469e5da1867/IQM2T7YVb4_yRZaxAUjdLVVVAeKBC3SUGYHQSyny3CGX7-Y?em=2"
         width="1200px" height="900px" frameborder="0">
