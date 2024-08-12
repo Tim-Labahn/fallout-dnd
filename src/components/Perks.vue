@@ -26,7 +26,7 @@ const perks: Perk[] = [
         ranks: 1,
         requirements: "STR 70",
         description:
-            "Wenn deine HP under deine Maximalen HP sinken, steigt dein STR score für alle STR tests auf 100 ",
+            "Wenn deine HP under deine Maximalen HP sinken, steigt dein STR score für alle STR tests auf 100",
     },
     {
         name: "Animal Friend",
@@ -54,7 +54,7 @@ const perks: Perk[] = [
         ranks: 1,
         requirements: "PER 70",
         description:
-            "Wenn du die kleine Aktion Zielen, verwendest erhält beim nächsten angriff, dein höchster wurf Piercing. ",
+            "Wenn du die kleine Aktion Zielen, verwendest erhält beim nächsten angriff, dein höchster wurf Piercing.",
     },
     {
         name: "Barbarian",
@@ -68,7 +68,28 @@ const perks: Perk[] = [
         ranks: 1,
         requirements: "STR 60",
         description:
-            "Wenn du einen nahkampf angriff mit deiner waffe machst erhält dein angriff zusätlich den Vicious Effekt",
+            "Wenn du einen nahkampf angriff mit einer einhand machst erhält dein angriff zusätlich den Vicious Effekt",
+    },
+    {
+        name: "Große Liga",
+        ranks: 1,
+        requirements: "STR 80",
+        description:
+            "Wenn du einen nahkampf angriff mit einer zweihand waffe machst erhält dein angriff zusätlich den Vicious Effekt",
+    },
+    {
+        name: "Black Widow/Lady Killer",
+        ranks: 1,
+        requirements: "CHA 60",
+        description:
+            "Wenn du einen CHA Test nutzt bei einer person des anderen geschlechtes kanst du einen W20 Zu deinen gunsten nutzen. Ebenfalls Sind Alle angriffe gegen dass andere geschlecht um einen W6 Stärker.",
+    },
+    {
+        name: "Blacksmith",
+        ranks: 3,
+        requirements: "STR 6, Level 2+",
+        description:
+            "Du kanst Waffen mit verbeserungs mods verbessern. Jeder rank dieses Perks scheltet ein level an Mods Frei. Bei Rank 1 kanst du Mod level 1, etc. Jedes mal wenn du diesen perk Lernst erhöht sich die Level vorraussetzung um 4.",
     },
     {
         name: "Bessere Krits",
@@ -78,34 +99,62 @@ const perks: Perk[] = [
             "Jedesmal wenn du einen angriff ausführst kannst du einen Glückspunkt verbrauchen und im gegenzug ist dein angriff kritisch.",
     },
     {
-        name: "Revolverheld",
-        ranks: 3,
-        requirements: "Keine",
+        name: "Blitz",
+        ranks: 2,
+        requirements: "AGI 90, Level 1+",
         description:
-            "Erhöht die Trefferchance mit einem Revolver, verringert jedoch die Trefferchance mit anderen Waffen.",
+            "Rank 1: Wenn du inerhalb eines Zuges dich zu einem gegner bewegst und ihr mit nahkampf angreifst, kanst du einen W20 zu deinen gunsten nutzen. Rank 2: Zusätlich fügst du einen W6 mehr schaden an, Die Level vorraussetzung steig bei Rank 2 um 3.",
     },
     {
-        name: "Powerrüstung-Profi",
-        ranks: 3,
-        requirements: "Keine",
+        name: "Bloody Mess",
+        ranks: 1,
+        requirements: "LCK 60",
         description:
-            "Erhöht die Schadensresistenz beim Tragen von Powerrüstung, verringert jedoch die Beweglichkeit ohne Powerrüstung.",
+            "Wenn du einen kritischen treffer machst erleided das ziel einen weiteren treffer an einer zufälligen stelle.",
     },
     {
-        name: "Scharfschützen-Elite",
-        ranks: 3,
-        requirements: "Keine",
+        name: "Can Do!",
+        ranks: 1,
+        requirements: "LCK 50",
         description:
-            "Erhöht die Trefferchance bei Kopfschüssen, verringert jedoch die Trefferchance bei nicht gezielten Schüssen.",
+            "Wenn du beim durchsuchen eines behälters essen findest, Findest du ein random Essens gegenstand.",
     },
     {
-        name: "Meistermediziner",
-        ranks: 3,
-        requirements: "Keine",
+        name: "Cap Collector",
+        ranks: 1,
+        requirements: "CHA 50",
         description:
-            "Heilgegenstände stellen mehr Gesundheit wieder her, verringert jedoch die Heilwirkung von Nahrung und Getränken.",
+            "Wenn du handelst kanst du dank deiner guten verhandlungen denn preis um 10% steigen oder sinken lassen.",
     },
-    // Add other perks similarly
+    {
+        name: "Cautious Nature",
+        ranks: 1,
+        requirements: "PER 70",
+        description:
+            "Wann immer du für einen skill test AP ausgibt um einen W20 bonus zu kaufen, kanst du diesen neu würfeln.",
+    },
+    {
+        name: "Center Mass",
+        ranks: 1,
+        requirements: "AGI 70",
+        description:
+            "Das du beim zielen den bauch auswählst, trifft dieser schuss. Ebenfalls kanst du einen W20 zu deinen gunsten beim zielen nutzen.",
+    },
+    {
+        name: "Chem Resistant",
+        ranks: 2,
+        requirements: "END 70, Level 1+",
+        description:
+            "Rank 1: Wenn du eine droge nutzt, würfle mit einem W6 weniger beim testen ob du süchtig wirst. Rank 2: Du Kannst nicht mehr abhänig werden. Rank 2 vorraussetzung: END 70, Level 5+",
+    },
+    {
+        name: "Chemist",
+        ranks: 1,
+        requirements: "INT 70",
+        description:
+            "Chems die du hergestellt hastm halten doppelt so lange an, ebenfals schaltest du alle Drogen recepte frei.",
+    },
+
 ];
 </script>
 
