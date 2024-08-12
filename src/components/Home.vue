@@ -8,13 +8,7 @@ const emit = defineEmits<{
 const title = "Welcome to the Wasteland";
 const subtitle = "War. War never changes.";
 
-const features = [
-    "Detailed Character Creation System",
-    "Comprehensive Rules for Skills and Combat",
-    "A Variety of Perks and Species to Choose From",
-    "Engaging Quests and Experience Rewards",
-    "Interactive Rulebook for Easy Reference",
-];
+
 </script>
 
 <template>
