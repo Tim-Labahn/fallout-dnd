@@ -154,7 +154,26 @@ const perks: Perk[] = [
         description:
             "Chems die du hergestellt hastm halten doppelt so lange an, ebenfals schaltest du alle Drogen recepte frei.",
     },
-
+    {
+        name: "Commando",
+        ranks: 2,
+        requirements: "AGI 80, Level 2+",
+        description:
+            "Wenn du einen Fernangriff machst, mit einer waffe die Feuerrate 3 oder höher macht diese waffe pro rank einen W6 mehr. Bei Rank 2: Ist die Letze vorraussetung 5+",
+    },
+    {
+        name: "Comprehentsion",
+        ranks: 1,
+        requirements: "INT 60",
+        description:
+            "Wenn du ein magzin für einen Bonus liest, kannst du einen W6 Würfeln und solltest du eine 5 oder 6 würfeln, erhälst du den Effekt doppelt.",
+    },
+    {
+        name: "Daring Nature",
+        ranks: 1,
+        requirements: "LCK 70",
+        description: "",
+    },
 ];
 </script>
 
