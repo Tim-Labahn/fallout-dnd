@@ -2,7 +2,7 @@
 interface Perk {
     name: string;
     ranks: number;
-    requirements: string;
+    requirements?: string;
     description: string;
 }
 
@@ -172,81 +172,177 @@ const perks: Perk[] = [
         name: "Daring Nature",
         ranks: 1,
         requirements: "LCK 70",
-        description: "Solltest du AP ausgeben um einen W20 für deinen angriff zu kaufen. Kannst du diesen Ap An den GM geben. dafür Kannst du diesen W20 neu würfeln.",
+        description:
+            "Solltest du AP ausgeben um einen W20 für deinen angriff zu kaufen. Kannst du diesen Ap An den GM geben. dafür Kannst du diesen W20 neu würfeln.",
     },
     {
         name: "Daring Nature",
         ranks: 1,
         requirements: "LCK 70",
-        description: "Solltest du AP ausgeben um einen W20 für deinen angriff zu kaufen. Kannst du diesen Ap An den GM geben. dafür Kannst du diesen W20 neu würfeln.",
+        description:
+            "Solltest du AP ausgeben um einen W20 für deinen angriff zu kaufen. Kannst du diesen Ap An den GM geben. dafür Kannst du diesen W20 neu würfeln.",
     },
     {
         name: "Demolition Expert",
         ranks: 1,
         requirements: "PER 60, LCK 60",
-        description: "Wenn du einen angriff mit einer waffe vom typ Explosion machst, Erhält der angriff den VICIOUS Damage effekt. Ebenfals schaltest du Sprengstoff rezepte frei.",
+        description:
+            "Wenn du einen angriff mit einer waffe vom typ Explosion machst, Erhält der angriff den VICIOUS Damage effekt. Ebenfals schaltest du Sprengstoff rezepte frei.",
     },
     {
         name: "Dodger",
         ranks: 1,
         requirements: "AGI 60, Level 4",
-        description: "Wenn du die Hauptaktion Ausweichen verwendest, kanst du einen W20 zu deinen gunsten nutzen",
+        description:
+            "Wenn du die Hauptaktion Ausweichen verwendest, kanst du einen W20 zu deinen gunsten nutzen",
     },
     {
         name: "Dogmeat",
         ranks: 1,
         requirements: "CHA 50",
-        description: "Du bist in dieser von tod überkommenen welt nicht allein, du hast einen Hund. Dein Hund kümmert sich um sich selbst was essen und trinken angeht. Sollte dein hund sterben, findest du mit sicherheit schnell einen neuen streuner. Oder wenn dein hund dich zu sehr nervt kanst du nach seinem Tod auch diesen perk umtauschen.",
+        description:
+            "Du bist in dieser von tod überkommenen welt nicht allein, du hast einen Hund. Dein Hund kümmert sich um sich selbst was essen und trinken angeht. Sollte dein hund sterben, findest du mit sicherheit schnell einen neuen streuner. Oder wenn dein hund dich zu sehr nervt kanst du nach seinem Tod auch diesen perk umtauschen.",
     },
     {
         name: "Entomologist",
         ranks: 1,
         requirements: "INT 70",
-        description: "Bei einem angrif gegen ein NPC vom typ Insekt, erhällt dein angriff Piercing +1.",
+        description:
+            "Bei einem angrif gegen ein NPC vom typ Insekt, erhällt dein angriff Piercing +1.",
     },
     {
         name: "Fast Metabolism",
         ranks: 3,
         requirements: "END 60, Level 1+, Not a Robot",
-        description: "Wenn du 10 oder mehr HP auf andere wege als Rasten regenerierst, heilst du Pro rank in diesem Perk 5 zusätliche HP.",
+        description:
+            "Wenn du 10 oder mehr HP auf andere wege als Rasten regenerierst, heilst du Pro rank in diesem Perk 5 zusätliche HP.",
     },
     {
         name: "Faster Healing",
         ranks: 1,
         requirements: "END 60, Not a Robot",
-        description: "Wenn du ein END + Survival test machst um deine verletzungen zu heilen, kanst du einen W20 zu deinen gunsten nutzen.",
+        description:
+            "Wenn du ein END + Survival test machst um deine verletzungen zu heilen, kanst du einen W20 zu deinen gunsten nutzen.",
     },
     {
         name: "Finesse",
         ranks: 1,
         requirements: "AGI 90",
-        description: "Einmal pro Kampf, Kannst du Alle genutzen W6 neu werfen ohne Glückspunkte zu verbrauchen.",
+        description:
+            "Einmal pro Kampf, Kannst du Alle genutzen W6 neu werfen ohne Glückspunkte zu verbrauchen.",
     },
     {
         name: "Fortune Finder",
         ranks: 3,
         requirements: "LCK 50, Level 2+",
-        description: "Wenn du einen wurf machst um zu schauen wie viel geld du findest, findest du je nach rank mehr. Rank 1: du finfest 2W4 mehr geld, Rank 2: du finfest 5W4 mehr geld, Rank 1: du finfest 8W4 mehr geld,",
+        description:
+            "Wenn du einen wurf machst um zu schauen wie viel geld du findest, findest du je nach rank mehr. Rank 1: du finfest 2W4 mehr geld, Rank 2: du finfest 5W4 mehr geld, Rank 1: du finfest 8W4 mehr geld,",
     },
     {
         name: "Ghost",
         ranks: 1,
         requirements: "PER 50, AGI 60",
-        description: "Wenn du einen wurf auf AGI + Sneak machst, kannst du einen W20 zu deinen gunsten nutzen.",
+        description:
+            "Wenn du einen wurf auf AGI + Sneak machst, kannst du einen W20 zu deinen gunsten nutzen.",
     },
     {
         name: "Grim Reaper",
         ranks: 1,
         requirements: "LCK 80",
-        description: "Wenn du mit einem angriff einen oder mehrere gegner Tötest, und du mit einem W6 eine 5 oder höher wirfst, füge zwei AP zum gruppen AP pool.",
+        description:
+            "Wenn du mit einem angriff einen oder mehrere gegner Tötest, und du mit einem W6 eine 5 oder höher wirfst, füge zwei AP zum gruppen AP pool.",
     },
     {
         name: "Gun Fu",
         ranks: 3,
         requirements: "AGI 100, Level 1+",
-        description: "Rank 1: Wenn du einen gegner aus der ferne triffst kannst du 1 AP verbrauchen um einen weiteren gegner an einer zufälligen stelle zu treffen. Dieser erleided den selben schaden wie der erste. Rank 2: Auf Rank 2 Kanst du bis zu 2 AP einsetzen um stat dessen zwei weitere gegner zu treffen. Rank 3: Du kannst bis zu 3 AP verwenden um 3 Gegner zu treffen. Mit jedem perk level steigt das benötigte level um 5.",
+        description:
+            "Rank 1: Wenn du einen gegner aus der ferne triffst kannst du 1 AP verbrauchen um einen weiteren gegner an einer zufälligen stelle zu treffen. Dieser erleided den selben schaden wie der erste. Rank 2: Auf Rank 2 Kanst du bis zu 2 AP einsetzen um stat dessen zwei weitere gegner zu treffen. Rank 3: Du kannst bis zu 3 AP verwenden um 3 Gegner zu treffen. Mit jedem perk level steigt das benötigte level um 5.",
     },
-
+    {
+        name: "Gun Nut",
+        ranks: 3,
+        requirements: "INT 60, Level 2+",
+        description:
+            "Rank 1: Du kanst waffen mit einfachen mods verbessern. Rank 2: du kanst waffen mit fortgeschritten mods verbessern. Rank 3: Du kanst waffen maximal verbessern.",
+    },
+    {
+        name: "Gunslinger",
+        ranks: 2,
+        requirements: "AGI 70, Level 2+",
+        description:
+            "Wenn du einen angriff mit einer einhand waffe machst die eine feuerrate von 2 oder weniger hat, erhöt sich der waffen schaden um +1 pro rank. Zusätlich kanst du pro runde den location würfel neu rollen. Rank 2 ist erst bei Level 6 frei schaltbar",
+    },
+    {
+        name: "Hacker",
+        ranks: 1,
+        requirements: "INT 80",
+        description:
+            "Die schwierigkeit ein terminal zu knacken sinkt um 1. Schwache Terminals brauchen keine probe mehr.",
+    },
+    {
+        name: "Healer",
+        ranks: 3,
+        requirements: "INT 70, Level 1+",
+        description:
+            "Wenn du HP wieder herstellst erhöhe die Hp die du heilst um 10 für jeden Rank dieses perks. Für jeden Rank steigt die level vorraussetzung um 5",
+    },
+    {
+        name: "Heave Ho!",
+        ranks: 1,
+        requirements: "STR 80",
+        description:
+            "Wenn du eine wurf waffe nutz kannst du mithilfe dieses perks, Jene waffe weiter werfen.",
+    },
+    {
+        name: "Hunter",
+        ranks: 1,
+        requirements: "END 60",
+        description:
+            "Wenn du einen angriff auf ein npc machst der weder Saugetier, Eidechse oder Insect ist, erhällt dein angriff den Vicious Effekt.",
+    },
+    {
+        name: "Infiltrator",
+        ranks: 1,
+        requirements: "PER 80",
+        description:
+            "Wenn du ein schloss knacken willst kanst du einen W20 zu deinen gunsten nutzen.",
+    },
+    {
+        name: "Iron Fist",
+        ranks: 2,
+        requirements: "STR 60, Level 1+",
+        description:
+            "Rank 1: Unbewaffnete angriffe fügen einen W6 Mehr schaden zu. Rank 2: Deine Angriffe erhalten ebenfalls den Vicious effekt, Rank 2 kann erst ab level 6 Genutzt werden.",
+    },
+    {
+        name: "Junktown Jerky Vendor",
+        ranks: 1,
+        requirements: "STR 60, Level 1+",
+        description:
+            "Die Schwierigkeit eines CHA + Barter Wurfes ist um 1 einfacher.",
+    },
+    {
+        name: "Laser Commander",
+        ranks: 2,
+        requirements: "PER 80, Level 2+",
+        description:
+            "Wenn du einen angriff mit einer Fernkampf waffe vom typ Energy, kanst du pro rank 1W6 mehr nutzen. Der Zweite Rank benötigt Level 6.",
+    },
+    {
+        name: "Lead Belly",
+        ranks: 2,
+        requirements: "END 60, Level 1+",
+        description:
+            "Rank 1: Beim verspeisen von radioaktivem essen und trinken kanst du einen W6 neu werfen. Rank 2: Du bist Immune gegen radioaktive strahlung durch nahrung. Rank 2 benötigt Level 5.",
+    },
+    {
+        name: "Live Giver",
+        ranks: 5,
+        requirements: "Level 5+",
+        description:
+            "Erhöht deine HP Pro rank um 20, mit jedem rank steigt der level anforderungen um 5.",
+    },
 ];
 </script>
 
