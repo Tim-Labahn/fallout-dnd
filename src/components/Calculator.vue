@@ -37,7 +37,7 @@
                 <h2>XP to Next Level Calculator</h2>
                 <form @submit.prevent="calculateXpToNextLevel">
                     <div>
-                        <label for="levelXp">Current Level:</label>
+                        <label for="levelXp">Next Level:</label>
                         <input type="number" v-model.number="levelXp" id="levelXp" min="1" max="100" required />
                     </div>
                     <button type="submit">Calculate XP to Next Level</button>
@@ -110,7 +110,7 @@ const calculateXpToNextLevel = () => {
         if (nextLevel > 100) {
             xpToNextLevel.value = 0;
         } else {
-            xpToNextLevel.value = ((currentLevel + 1) * 2 + 1) * 100;
+            xpToNextLevel.value = (currentLevel * (currentLevel - 1) / 2) * 100
         }
     }
 };

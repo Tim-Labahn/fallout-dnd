@@ -324,6 +324,13 @@ const perks: Perk[] = [
             "Wenn du ein schloss knacken willst kanst du einen W20 zu deinen gunsten nutzen.",
     },
     {
+        name: "Intense Training",
+        ranks: 10,
+        requirements: { LVL: 2 },
+        description:
+            "Erhöhe einer deiner Special Attribute um 10, deine SPECIAL werte können nicht über 100 steigen. Für jedes Level in diesem rank, erhöht sich die level anforderung um 2.",
+    },
+    {
         name: "Iron Fist",
         ranks: 2,
         requirements: { STR: 60, LVL: 1 },
