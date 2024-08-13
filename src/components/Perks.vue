@@ -333,35 +333,35 @@ const perks: Perk[] = [
     {
         name: "Junktown Jerky Vendor",
         ranks: 1,
-        requirements: "STR 60, Level 1+",
+        requirements: { STR: 60, LVL: 1 },
         description:
             "Die Schwierigkeit eines CHA + Barter Wurfes ist um 1 einfacher.",
     },
     {
         name: "Laser Commander",
         ranks: 2,
-        requirements: "PER 80, Level 2+",
+        requirements: { PER: 80, LVL: 2 },
         description:
             "Wenn du einen angriff mit einer Fernkampf waffe vom typ Energy, kanst du pro rank 1W6 mehr nutzen. Der Zweite Rank benötigt Level 6.",
     },
     {
         name: "Lead Belly",
         ranks: 2,
-        requirements: "END 60, Level 1+",
+        requirements: { END: 60, LVL: 1 },
         description:
             "Rank 1: Beim verspeisen von radioaktivem essen und trinken kanst du einen W6 neu werfen. Rank 2: Du bist Immune gegen radioaktive strahlung durch nahrung. Rank 2 benötigt Level 5.",
     },
     {
         name: "Live Giver",
         ranks: 5,
-        requirements: "Level 5+",
+        requirements: { LVL: 5 },
         description:
             "Erhöht deine HP Pro rank um 20, mit jedem rank steigt der level anforderungen um 5.",
     },
     {
         name: "Master Thief",
         ranks: 1,
-        requirements: "PER 8, AGI 9",
+        requirements: { PER: 8, AGI: 9 },
         description:
             "Wenn du diebstahl versuchst, fällt es dem gegner schwerer dich zu bemerken.",
     },
@@ -371,16 +371,21 @@ const perks: Perk[] = [
 <template>
     <div class="perks">
         <h1>Perks</h1>
-        <ul class="perks-list">
-            <li v-for="perk in perks" :key="perk.name" class="perk-item">
-                <h2>{{ perk.name }}</h2>
-                <p><strong>Ranks:</strong> {{ perk.ranks }}</p>
-                <template v-if="perk.requirements">
-                    <p><strong>Requirements:</strong> {{ perk.requirements }}</p>
-                </template>
-                <p><strong>Description:</strong> {{ perk.description }}</p>
-            </li>
-        </ul>
+        <div v-for="perk in perks" :key="perk.name" class="perk-item">
+            <h2>{{ perk.name }}</h2>
+            <div>
+                <strong>Ranks:</strong> {{ perk.ranks }}
+            </div>
+            <div v-if="perk.requirements">
+                <strong>Requirements: </strong>
+                <span v-for="(value, key) in perk.requirements" :key="key">
+                    <strong>{{ key }}:</strong> {{ value }}&nbsp;
+                </span>
+            </div>
+            <div>
+                <strong>Description:</strong> {{ perk.description }}
+            </div>
+        </div>
     </div>
 </template>
 
