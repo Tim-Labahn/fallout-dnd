@@ -372,6 +372,21 @@ const perks: Perk[] = [
         description:
             "Wenn du diebstahl versuchst, fällt es dem gegner schwerer dich zu bemerken.",
     },
+    {
+        name: "Medic",
+        ranks: 1,
+        requirements: { INT: 8 },
+        description:
+            "Wenn du ein erste hilfe Kit nutz, kanst du einen W20 zu deinen gunsten nutzen.",
+    },
+    {
+        name: "Mister Sandman",
+        ranks: 1,
+        requirements: { AGI: 9 },
+        description:
+            "Wenn du einen hemlischen angriff mit einer geschaldämpften waffe machst, steigt der schaden um einen 2W6. Dieser effekt ist nicht möglich während du eine PR trägst.",
+    },
+
 ];
 </script>
 
